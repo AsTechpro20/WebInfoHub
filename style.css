@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Comfortaa', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#center-container {
+  text-align: center;
+  flex: 1; /* Take up remaining vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#web-info-hub-text {
+  font-size: 60px; /* Adjusted font size to 36px */
+  margin-bottom: 20px;
+}
+
+#search-container {
+  text-align: center;
+}
+
+#search-bar {
+  box-sizing: border-box;
+  width: 70%;
+  max-width: 400px; /* Set a maximum width for the search bar */
+  padding: 10px;
+  font-size: 16px;
+}
+
+#search-btn {
+  box-sizing: border-box;
+  width: 100%; /* Make the search button full width initially */
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px; /* Add margin to separate search bar and button */
+}
+
+#results {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 98.7%;
+  margin: 0 auto;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  #search-btn {
+    width: 100%; /* Make the search button full width on smaller screens */
+    margin-top: 10px; /* Maintain margin in responsive view */
+  }
+  
+  #web-info-hub-text {
+    font-size: 18px;
+  }
+
+  #search-bar {
+    width: 100%; /* Make the search bar full width in responsive view */
+  }
+
+
+  /* Adjust the layout for smaller screens */
+  #search-bar,
+  #search-btn {
+    display: block; /* Ensure they stack on top of each other */
+  }
+}
+
+/* Additional responsive styles for larger screens */
+@media only screen and (min-width: 1200px) {
+  #web-info-hub-text {
+    font-size: 48px;
+  }
+
+  /* Adjust the layout for larger screens */
+  #search-bar,
+  #search-btn {
+    display: inline-block; /* Put them side by side */
+    width: auto;
+  }
+}
